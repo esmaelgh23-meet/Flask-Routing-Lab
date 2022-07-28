@@ -6,5 +6,37 @@
 </head>
 <body>
 
+<img src="adidas_ball.jpg">
+<img src="adidas_ball145.jpg">
+<img src="nike_ball.jpg">
+<img src="puma_ball.jpg">
+
+
+<h1> hello{{year}} students </h1>
+{% if_we_own_money ==true %}
+<p> your options are: </p>
+<h2> balls:</h2>
+<ul>
+    
+{% for i in students %}
+<li>{{i}}</li>
+{%endfor%}
+
+
+
+</ul>
+
+{% else %}
+<h1> sold out</h1>
+{% endif%}
+
+<ul>
+  <li>adidas ball num1</li>
+  <li>adidas ball num2</li>
+  <li>nike ball</li>
+  <li>puma ball</li>
+</ul>
+
+
 </body>
 </html>
